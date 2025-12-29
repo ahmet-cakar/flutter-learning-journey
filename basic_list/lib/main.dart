@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main(List<String> args) {
-  runApp(MaterialApp(home: BasicList()));
+void main() {
+  runApp(
+    MaterialApp(
+      title: "Basic List",
+      home: Scaffold(
+        appBar: AppBar(title: const Text("Basic List")),
+        body: const BasicList(),
+      ),
+    ),
+  );
 }
 
 class BasicList extends StatelessWidget {
@@ -9,6 +17,12 @@ class BasicList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return ListView(
+      children: [
+        const ListTile(leading: Icon(Icons.map), title: Text("Map")),
+        const ListTile(leading: Icon(Icons.album), title: Text("Album")),
+        const ListTile(leading: Icon(Icons.phone), title: Text("Phone")),
+      ],
+    );
   }
 }
