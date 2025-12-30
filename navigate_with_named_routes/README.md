@@ -11,3 +11,4 @@ A new Flutter project.
 InitialRoute : başlangıç route
 routes : Map ile çalışıyor
 Navigator.pushNamed ile isim vererek route'a gidebiliyoruz.
+Route kullanımında MaterialApp içinde home kullanılmaz.
