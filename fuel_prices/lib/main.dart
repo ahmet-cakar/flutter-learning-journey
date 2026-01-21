@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:fuel_prices/data/services/local_data_service/local_data_service.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  final _service = LocalDataService();
+  var test = _service.getDiesels();
   runApp(const MyApp());
 }
 
