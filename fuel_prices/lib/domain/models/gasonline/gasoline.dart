@@ -7,7 +7,7 @@ part 'gasoline.g.dart';
 abstract class Gasoline with _$Gasoline {
   const factory Gasoline({
     required String marka,
-    required double dizel,
+    required double benzin,
     required String katkili,
   }) = _Gasoline;
 

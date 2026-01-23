@@ -8,12 +8,12 @@ part of 'gasoline.dart';
 
 _Gasoline _$GasolineFromJson(Map<String, dynamic> json) => _Gasoline(
   marka: json['marka'] as String,
-  dizel: (json['dizel'] as num).toDouble(),
+  benzin: (json['benzin'] as num).toDouble(),
   katkili: json['katkili'] as String,
 );
 
 Map<String, dynamic> _$GasolineToJson(_Gasoline instance) => <String, dynamic>{
   'marka': instance.marka,
-  'dizel': instance.dizel,
+  'benzin': instance.benzin,
   'katkili': instance.katkili,
 };

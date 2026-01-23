@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$Gasoline {
 
- String get marka; double get dizel; String get katkili;
+ String get marka; double get benzin; String get katkili;
 /// Create a copy of Gasoline
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -28,16 +28,16 @@ $GasolineCopyWith<Gasoline> get copyWith => _$GasolineCopyWithImpl<Gasoline>(thi
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is Gasoline&&(identical(other.marka, marka) || other.marka == marka)&&(identical(other.dizel, dizel) || other.dizel == dizel)&&(identical(other.katkili, katkili) || other.katkili == katkili));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Gasoline&&(identical(other.marka, marka) || other.marka == marka)&&(identical(other.benzin, benzin) || other.benzin == benzin)&&(identical(other.katkili, katkili) || other.katkili == katkili));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,marka,dizel,katkili);
+int get hashCode => Object.hash(runtimeType,marka,benzin,katkili);
 
 @override
 String toString() {
-  return 'Gasoline(marka: $marka, dizel: $dizel, katkili: $katkili)';
+  return 'Gasoline(marka: $marka, benzin: $benzin, katkili: $katkili)';
 }
 
 
@@ -48,7 +48,7 @@ abstract mixin class $GasolineCopyWith<$Res>  {
   factory $GasolineCopyWith(Gasoline value, $Res Function(Gasoline) _then) = _$GasolineCopyWithImpl;
 @useResult
 $Res call({
- String marka, double dizel, String katkili
+ String marka, double benzin, String katkili
 });
 
 
@@ -65,10 +65,10 @@ class _$GasolineCopyWithImpl<$Res>
 
 /// Create a copy of Gasoline
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? marka = null,Object? dizel = null,Object? katkili = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? marka = null,Object? benzin = null,Object? katkili = null,}) {
   return _then(_self.copyWith(
 marka: null == marka ? _self.marka : marka // ignore: cast_nullable_to_non_nullable
-as String,dizel: null == dizel ? _self.dizel : dizel // ignore: cast_nullable_to_non_nullable
+as String,benzin: null == benzin ? _self.benzin : benzin // ignore: cast_nullable_to_non_nullable
 as double,katkili: null == katkili ? _self.katkili : katkili // ignore: cast_nullable_to_non_nullable
 as String,
   ));
@@ -155,10 +155,10 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String marka,  double dizel,  String katkili)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String marka,  double benzin,  String katkili)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _Gasoline() when $default != null:
-return $default(_that.marka,_that.dizel,_that.katkili);case _:
+return $default(_that.marka,_that.benzin,_that.katkili);case _:
   return orElse();
 
 }
@@ -176,10 +176,10 @@ return $default(_that.marka,_that.dizel,_that.katkili);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String marka,  double dizel,  String katkili)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String marka,  double benzin,  String katkili)  $default,) {final _that = this;
 switch (_that) {
 case _Gasoline():
-return $default(_that.marka,_that.dizel,_that.katkili);case _:
+return $default(_that.marka,_that.benzin,_that.katkili);case _:
   throw StateError('Unexpected subclass');
 
 }
@@ -196,10 +196,10 @@ return $default(_that.marka,_that.dizel,_that.katkili);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String marka,  double dizel,  String katkili)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String marka,  double benzin,  String katkili)?  $default,) {final _that = this;
 switch (_that) {
 case _Gasoline() when $default != null:
-return $default(_that.marka,_that.dizel,_that.katkili);case _:
+return $default(_that.marka,_that.benzin,_that.katkili);case _:
   return null;
 
 }
@@ -211,11 +211,11 @@ return $default(_that.marka,_that.dizel,_that.katkili);case _:
 @JsonSerializable()
 
 class _Gasoline implements Gasoline {
-  const _Gasoline({required this.marka, required this.dizel, required this.katkili});
+  const _Gasoline({required this.marka, required this.benzin, required this.katkili});
   factory _Gasoline.fromJson(Map<String, dynamic> json) => _$GasolineFromJson(json);
 
 @override final  String marka;
-@override final  double dizel;
+@override final  double benzin;
 @override final  String katkili;
 
 /// Create a copy of Gasoline
@@ -231,16 +231,16 @@ Map<String, dynamic> toJson() {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Gasoline&&(identical(other.marka, marka) || other.marka == marka)&&(identical(other.dizel, dizel) || other.dizel == dizel)&&(identical(other.katkili, katkili) || other.katkili == katkili));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Gasoline&&(identical(other.marka, marka) || other.marka == marka)&&(identical(other.benzin, benzin) || other.benzin == benzin)&&(identical(other.katkili, katkili) || other.katkili == katkili));
 }
 
 @JsonKey(includeFromJson: false, includeToJson: false)
 @override
-int get hashCode => Object.hash(runtimeType,marka,dizel,katkili);
+int get hashCode => Object.hash(runtimeType,marka,benzin,katkili);
 
 @override
 String toString() {
-  return 'Gasoline(marka: $marka, dizel: $dizel, katkili: $katkili)';
+  return 'Gasoline(marka: $marka, benzin: $benzin, katkili: $katkili)';
 }
 
 
@@ -251,7 +251,7 @@ abstract mixin class _$GasolineCopyWith<$Res> implements $GasolineCopyWith<$Res>
   factory _$GasolineCopyWith(_Gasoline value, $Res Function(_Gasoline) _then) = __$GasolineCopyWithImpl;
 @override @useResult
 $Res call({
- String marka, double dizel, String katkili
+ String marka, double benzin, String katkili
 });
 
 
@@ -268,10 +268,10 @@ class __$GasolineCopyWithImpl<$Res>
 
 /// Create a copy of Gasoline
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? marka = null,Object? dizel = null,Object? katkili = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? marka = null,Object? benzin = null,Object? katkili = null,}) {
   return _then(_Gasoline(
 marka: null == marka ? _self.marka : marka // ignore: cast_nullable_to_non_nullable
-as String,dizel: null == dizel ? _self.dizel : dizel // ignore: cast_nullable_to_non_nullable
+as String,benzin: null == benzin ? _self.benzin : benzin // ignore: cast_nullable_to_non_nullable
 as double,katkili: null == katkili ? _self.katkili : katkili // ignore: cast_nullable_to_non_nullable
 as String,
   ));
