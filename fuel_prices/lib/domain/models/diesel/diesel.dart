@@ -13,6 +13,6 @@ const factory Diesel({
   required String katkili,
 }) = _Diesel;
 
-factory Diesel.fromJson(Map<String,dynamic?> json)=>_$DieselFromJson(json);
+factory Diesel.fromJson(Map<String,dynamic> json)=>_$DieselFromJson(json);
 
 }

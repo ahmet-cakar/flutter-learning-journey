@@ -123,7 +123,7 @@ class _ColorSection extends StatelessWidget {
 }
 
 class _PriceRow extends StatelessWidget {
-  const _PriceRow({super.key, required this.textTheme});
+  const _PriceRow({required this.textTheme});
 
   final TextTheme textTheme;
 
@@ -182,7 +182,7 @@ class _RatingSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           const Row(
-            children: const [
+            children: [
               Icon(Icons.star, size: 18, color: Colors.amber),
               SizedBox(width: 4),
               Text('4.6'),

@@ -7,5 +7,5 @@ part 'lpg.g.dart';
 abstract class Lpg with _$Lpg {
   const factory Lpg({required String lpg, required String marka}) = _Lpg;
 
-  factory Lpg.fromJson(Map<String, dynamic?> json) => _$LpgFromJson(json);
+  factory Lpg.fromJson(Map<String, dynamic> json) => _$LpgFromJson(json);
 }

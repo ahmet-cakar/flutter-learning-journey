@@ -66,7 +66,7 @@ class _BottomButtons extends StatelessWidget {
 }
 
 class _NotesCard extends StatelessWidget {
-  const _NotesCard({super.key});
+  const _NotesCard();
 
   @override
   Widget build(BuildContext context) {

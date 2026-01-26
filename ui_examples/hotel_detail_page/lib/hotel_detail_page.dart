@@ -216,7 +216,7 @@ class _AmenitiesSection extends StatelessWidget {
     'Sea view',
   ];
 
-  const _AmenitiesSection({super.key});
+  const _AmenitiesSection();
 
   @override
   Widget build(BuildContext context) {
@@ -239,7 +239,7 @@ class _AmenitiesSection extends StatelessWidget {
 }
 
 class _InfoCardsSection extends StatelessWidget {
-  const _InfoCardsSection({super.key});
+  const _InfoCardsSection();
 
   @override
   Widget build(BuildContext context) {
@@ -345,7 +345,7 @@ class _InfoCard extends StatelessWidget {
 }
 
 class _AboutSection extends StatelessWidget {
-  const _AboutSection({super.key});
+  const _AboutSection();
 
   @override
   Widget build(BuildContext context) {
@@ -383,7 +383,7 @@ class _PhotosSection extends StatelessWidget {
     'https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg',
   ];
 
-  const _PhotosSection({super.key});
+  const _PhotosSection();
 
   @override
   Widget build(BuildContext context) {
@@ -422,7 +422,7 @@ class _PhotosSection extends StatelessWidget {
 }
 
 class _BottomBar extends StatelessWidget {
-  const _BottomBar({super.key});
+  const _BottomBar();
 
   @override
   Widget build(BuildContext context) {

@@ -11,6 +11,6 @@ abstract class Gasoline with _$Gasoline {
     required String katkili,
   }) = _Gasoline;
 
-  factory Gasoline.fromJson(Map<String, dynamic?> json) =>
+  factory Gasoline.fromJson(Map<String, dynamic> json) =>
       _$GasolineFromJson(json);
 }
